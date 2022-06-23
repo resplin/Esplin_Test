@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Esplin_Test::menu"
+		     title="Esplin - Test"
+		     module="Esplin_Test"
+		     sortOrder="210"
+		     resource="Esplin_Test::menu"
+		/>
+
+		<add id="ECInternet_Sage300PurchaseOrders::listing"
+		     title="Listing"
+		     module="Esplin_Test"
+		     sortOrder="1"
+		     parent="Esplin_Test::menu"
+		     action="esplin/index/index"
+		     resource="Esplin_Test::listing"
+		/>
+	</menu>
+</config>
